@@ -22,6 +22,20 @@ public class BankAccount {
     private String email;
     private String phoneNumber;
 
+    public BankAccount() {
+        //System.out.println("empty constructor called");
+        //the default constrctor can be used to call the second constructor by using keyword "this()", but it must in the first line
+        this(000000, "default Name", "myemail@xxx", "000000000");
+    }
+
+    public BankAccount(int accountNumber, String customerName, String email, String phoneNumber) {
+        //within a constructor code, we should not call other methods
+        this.accountNumber = accountNumber;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
     public void setAccountNumber(int accountNumber) {
         this.accountNumber = accountNumber;
     }

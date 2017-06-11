@@ -32,7 +32,7 @@ public class Main {
         bATJX.getBalance(10000);
         bATJX.withdraw(4000);
 
-
-
+        BankAccount bA2 = new BankAccount(123, "wqe", "qweqe", "12312323");
+        bA2.deposit(1000);
     }
 }
