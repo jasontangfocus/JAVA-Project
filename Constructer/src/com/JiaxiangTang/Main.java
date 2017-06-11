@@ -17,13 +17,13 @@ public class Main {
 
         BankAccount bATJX = new BankAccount();
         bATJX.setAccountNumber(10000);
-        bATJX.setCustomerName("tangjiaxiang");
-        bATJX.setEmail("t.jiaxiang@gmail.com");
-        bATJX.setPhoneNumber("4090546883");
+        bATJX.setCustomerName("xxxxx");
+        bATJX.setEmail("xxxxxxxx@xxxxx");
+        bATJX.setPhoneNumber("xxxxxxxxxxxx");
         bATJX.deposit(2000d);
 
 
-        System.out.println(bATJX.getAccountNumber("tangjiaxiang"));
+        System.out.println(bATJX.getAccountNumber("xxxxx"));
         System.out.println(bATJX.getCustomerName(10000));
         bATJX.getBalance(10000);
         bATJX.deposit(2000);
