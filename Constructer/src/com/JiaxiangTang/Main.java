@@ -34,5 +34,8 @@ public class Main {
 
         BankAccount bA2 = new BankAccount(123, "wqe", "qweqe", "12312323");
         bA2.deposit(1000);
+
+        BankAccount bA3 = new BankAccount("sddd", "dsadad", "1231231321");
+        System.out.println(bATJX.getCustomerName(000000));
     }
 }

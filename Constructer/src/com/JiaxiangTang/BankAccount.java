@@ -37,7 +37,7 @@ public class BankAccount {
     }
 
     public BankAccount(String customerName, String email, String phoneNumber) {
-        this(99999, customerName, email, phoneNumber);
+        this(000000, customerName, email, phoneNumber);
     }
 
     public void setAccountNumber(int accountNumber) {
