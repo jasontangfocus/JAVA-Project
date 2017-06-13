@@ -13,7 +13,7 @@ public class Main {
         create getters only for this using code generation of intellij on setters wont be needed
         test and confirm it works
          */
-
+        
 
     }
 }

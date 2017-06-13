@@ -14,5 +14,22 @@ public class VipCustomer {
         create getters only for this using code generation of intellij on setters wont be needed
         test and confirm it works
          */
+    private String name;
+    private int creditLimit;
+    private String emailAddress;
+
+    public VipCustomer() {
+        this("Joash", 10000, "Joash@gmail.com");
+    }
+
+    public VipCustomer(String name, int creditLimit, String emailAddress) {
+        this.name = name;
+        this.creditLimit = creditLimit;
+        this.emailAddress = emailAddress;
+    }
+
+    public VipCustomer(String name, String emailAddress) {
+        this(name, 10000, emailAddress);
+    }
 
 }
