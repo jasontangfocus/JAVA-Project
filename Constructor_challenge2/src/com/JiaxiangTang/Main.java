@@ -13,7 +13,15 @@ public class Main {
         create getters only for this using code generation of intellij on setters wont be needed
         test and confirm it works
          */
-        
+        VipCustomer vip1 = new VipCustomer();
+        System.out.println(vip1.getName());
+
+        VipCustomer vip2 = new VipCustomer("Bob", "Bob@emial.com");
+        System.out.println(vip2.getName());
+
+        VipCustomer vip3 = new VipCustomer("Tim", 10000, "Tim@email.com");
+        System.out.println(vip3.getName());
+
 
     }
 }
