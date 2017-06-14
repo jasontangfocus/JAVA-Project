@@ -18,6 +18,6 @@ public class Main {
         sportCar.move(1);
         sportCar.accelerate(10);
         sportCar.decreasingSpeed(-1, 5);
-
+        sportCar.steer(1,0);
     }
 }
