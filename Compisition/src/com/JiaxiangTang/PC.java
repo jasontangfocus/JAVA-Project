@@ -14,15 +14,29 @@ public class PC {
         this.motherboard = motherboard;
     }
 
-    public Case getTheCase() {
+    public void powerUp() {
+        theCase.pressPowerButton();
+        drawLogo();
+    }
+
+    private void drawLogo() {
+        //fancy graphic
+        montitor.drawPixelAt(1200, 50, "yellow");
+    }
+
+
+/*
+
+    private Case getTheCase() {
         return theCase;
     }
 
-    public Monitor getMontitor() {
+    private Monitor getMontitor() {
         return montitor;
     }
 
-    public Motherboard getMotherboard() {
+    private Motherboard getMotherboard() {
         return motherboard;
     }
+*/
 }
