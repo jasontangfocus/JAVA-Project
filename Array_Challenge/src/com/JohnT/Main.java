@@ -37,7 +37,7 @@ public class Main {
         int[] arr = new int[number];
         for (int i = 0;i < arr.length; i++) {
             arr[i] = scanner.nextInt();
-        } 
+        }
         return arr;
     }
 
