@@ -1,5 +1,6 @@
 package com.JohnT;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -19,9 +20,16 @@ public class Main {
         //and sortIntegers should sort the array and return a new array containing the sorted numbers
         //you will have to figure out how to copy the array elements from the passed array into a new array and sort them and return the new sorted array.
 
-        int[] myIntArray = new int[];
+        System.out.println("Please Decide how many numbers you want to enter, and enter the total numbers you want to enter:");
+        int number = scanner.nextInt();
+        int[] myIntArray = getIntegers(number);
+        printArray(sortArray(myIntArray));
+    }
 
-
+    public static void printArray(int[] arr) {
+        for (int num : arr) {
+            System.out.println(num);
+        }
     }
 
     public static int[] getIntegers(int number) {
@@ -29,17 +37,21 @@ public class Main {
         int[] arr = new int[number];
         for (int i = 0;i < arr.length; i++) {
             arr[i] = scanner.nextInt();
-        }
+        } 
         return arr;
     }
 
     public static int[] sortArray(int[] array) {
-        int[] sortedarray = new int[array.length];
-        for (int i = 0; i < array.length; i++) {
-            sortedarray[i] = array[i];
-            if (array[i+1] > sortedarray[i]) {
-
+        int[] sortedarray = Arrays.copyOf(array, array.length);
+        for (int i = 0; i < sortedarray.length; i++) {
+            for (int j = i + 1; j < sortedarray.length; j++) {
+                if (sortedarray[i] < sortedarray[j]) {
+                    int temp = sortedarray[j];
+                    sortedarray[j] = sortedarray[i];
+                    sortedarray[i] = temp;
+                }
             }
         }
+        return sortedarray;
     }
 }
