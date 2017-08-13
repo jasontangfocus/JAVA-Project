@@ -1,4 +1,4 @@
-package ListArrayList.JohnT;
+package com.company;
 
 import java.util.ArrayList;
 
@@ -38,6 +38,4 @@ public class GroceryList {
         int position = groceryList.indexOf(searchItem);
         return position >= 0 ? groceryList.get(position):null;
     }
-
-
 }
