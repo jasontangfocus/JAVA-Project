@@ -35,6 +35,10 @@ public class Branch {
         return false;
     }
 
+    public ArrayList<Customer> getCustomers() {
+        return customers;
+    }
+
     private Customer findCustomer(String customerName) {
         for (int i = 0;i < customers.size(); i++) {
             Customer checkedCustomer = this.customers.get(i);
